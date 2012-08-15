@@ -1,3 +1,4 @@
 This is my script for Kaggle and Facebook's recruiting competition, found here: http://www.kaggle.com/c/FacebookRecruiting/. The goal was to recommend missing links in a social network. You can find Edwin Chen's excellent writeup of the competition (with code) here: https://github.com/echen/link-prediction.
 
 For a given node, my script recommends people that node has as followers who the node hasn't yet friended (i.e. if A follows B, but B doesn't yet follow A, recommend all A to B). I further rank that set by their pagerank, which helped performance. Rather than calculate pagerank on the entire graph, I build subgraphs that consist of the nodes to be ranked, their friends, and their followers. 
+This scores a 0.65037 mean average precision @ 10.
