@@ -1,4 +1,4 @@
 kaggle
 ======
 
-kaggle competition scripts
+Code for different Kaggle competitions
